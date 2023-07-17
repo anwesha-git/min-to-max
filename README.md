@@ -1,4 +1,4 @@
-# min_to_max_agg Aggregate Function
+# min_to_max Aggregate Function
 
 The min_to_max_agg aggregate function is a PostgreSQL extension designed to determine the minimum and maximum values of a column in a flexible manner. It operates on various data types such as integers, characters, floats, and more. This function returns the results as a formatted string, making it convenient to extract and display the range of values for a given column.
 
