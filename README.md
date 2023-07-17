@@ -15,12 +15,11 @@ min_to_max
 
 ## Installation
 
-1. Download the source code.
-2. Copy the extension files <min_to_max_agg.control> and <min_to_max_agg--1.0.sql> to the respective extension folder.
+1. Copy the extension files ```min_to_max_agg.control``` and <min_to_max_agg--1.0.sql> to the respective extension folder.
    something like `../share/extension` inside the Postgres downloads.
-3. Connect to the Postgres database 
+2. Connect to the Postgres database 
    `psql -h <host> -p <port> -d <database> -U <username>`
-4. Create the extension
+3. Create the extension
    `CREATE EXTENSION min_to_max_agg;`
 
 ## Usage
