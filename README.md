@@ -25,10 +25,12 @@ min_to_max
 
 ## Usage
 1. Once the extension is installed, you can use the min_to_max aggregate function in your SQL queries.
+   
    ``SELECT min_to_max(val) FROM (VALUES(5),(3),(6),(7),(9),(10),(7)) t(val);``
 
 ## Testing
 Please save the file <min-to-max-test.sql> in your local. You can execute the file and do unit testing
+
 ``\i <file_location>``
       OR
 ``psql -h host -U username -d DataBase -a -f file_location``
