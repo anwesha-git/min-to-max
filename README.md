@@ -1,6 +1,6 @@
 # min_to_max Aggregate Function
 
-The `min_to_max_agg` aggregate function is a PostgreSQL extension that calculates the minimum and maximum values of a column and returns them as a formatted string. It operates on various data types such as integers, characters, floats, and more.
+The `min_to_max` aggregate function is a PostgreSQL extension that calculates the minimum and maximum values of a column and returns them as a formatted string. It operates on various data types such as integers, characters, floats, and more.
 
 For example:
 
@@ -15,8 +15,8 @@ min_to_max
 
 ## Installation
 
-1. Copy the extension files ```min_to_max_agg.control``` and ```min_to_max_agg--1.0.sql``` to the respective extension folder.
-   something like `../share/extension` inside the Postgres downloads.
+1. Copy the files ```min_to_max_agg.control``` and ```min_to_max_agg--1.0.sql``` to the postgres extension folder.
+   The folder structure looks something like `../share/extension` located inside the Postgres installed path.
 2. Connect to the Postgres database 
    `psql -h <host> -p <port> -d <database> -U <username>`
 3. Create the extension
