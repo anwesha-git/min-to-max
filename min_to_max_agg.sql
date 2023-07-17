@@ -3,6 +3,9 @@ CREATE OR REPLACE FUNCTION min_to_max_agg(cur_state anyarray, val anyelement)
   RETURNS anyarray AS
 $$
 BEGIN
+  IF val IS NULL THEN
+    RETURN cur_state;
+  END IF;
   IF cur_state IS NULL THEN
     RETURN array[val, val];
   ELSE

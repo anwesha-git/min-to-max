@@ -18,3 +18,11 @@ FROM (VALUES('a'),('b'),('c')) t(val);
 --Test-case-5 (with float data type)
 SELECT min_to_max(val)
 FROM (VALUES(5.1),(4.5),(0),(3.9),(3.8)) t(val);
+
+--Test-case-6 (with NULL values)
+SELECT min_to_max(val) 
+FROM (VALUES(2),(NULL),(3),(4)) t(val);
+
+--Test-case-7 (only NULL value)
+SELECT min_to_max(val) 
+FROM (VALUES(NULL)) t(val);
