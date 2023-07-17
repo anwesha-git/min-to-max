@@ -1,0 +1,6 @@
+# min_to_max_agg extension
+comment = 'A PostgreSQL extension for min_to_max aggregate function'
+default_version = '1.0'
+module_pathname = '$libdir/min_to_max_agg'
+relocatable = true
+trusted = true
